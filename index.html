@@ -9,48 +9,50 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
-	<header>
-	    <div class="container">
-	         <nav class="navbar navbar-default">
-	          <div class="container-fluid">
-	           
-	            <div class="navbar-header">
-	              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
-	                <span class="sr-only">Toggle navigation</span>
-	                <span class="icon-bar"></span>
-	                <span class="icon-bar"></span>
-	                <span class="icon-bar"></span>
-	              </button>
-	              <a class="navbar-brand titulo" href="#">Code Girls</a>
-	            </div>
-
-	            <div class="collapse navbar-collapse" id="navbar-1">
-	                <ul class="nav navbar-nav pull-right"  aria-expanded="false">
-	                    <li class="active"><a href="#inicio">Inicio<span class="sr-only"></span></a></li>
-	                    <li><a href="#documental">Documental</a></li>
-	                    <li><a href="#hackathon">Hackathon</a></li>
-	                    <li><a href="#contacto1">Contacto</a></li>
-	                </ul>  
-	            </div>
-	            </div>
-	        </nav>
-	    </div>  
-	</header>
-
-
 	
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 col-sm-3 col-xs-9">
+					<div class="titulo">
+						<p>Code Girls</p>
+					</div>
+				</div>
+				<div class=" col-md-7 col-sm-9 col-xs-3">
+					<button class="btn ntm-primary visible-xs" data-toggle="collapse" data-target="#main-navigation">Menu</button>
+					<nav class="hidden-xs">
+						<ul class="list-inline text-right">
+							<li><A href="#inicio">Inicio</A></li>
+							<li><A href="#doc">Documental</A></li>
+							<li><A href="#hacka">Hackathon</A></li>
+							<li><A href="#contacto">Contáctanos</A></li>
+						</ul>		
+					</nav>	
+				</div>
+			</div>
+			<nav id="main-navigation" class="collapse visible-xs">
+				<ul class="text-right">
+					<li><A href="#inicio">Inicio</A></li>
+					<li><A href="#doc">Documental</A></li>
+					<li><A href="#hacka">Hackathon</A></li>
+					<li><A href="#contacto">Contáctanos</A></li>
+				</ul>
+			</nav>									
+		</div>			
+	</header>
+	<A name="inicio"></A>
 	<section class="hero">
 		<div class="container">
 				<div class="central">
 					<h1>CHICAS QUE CAMBIAN EL MUNDO</h1>
-					<p>Participa en nuestras actividades</p>
+					<p>!Participa en nuestras actividades!</p>
 					<button class="btn btn-primary btn-lg">
 						Inscríbete
 					</button>
 				</div>
 			</div>		
 	</section>
+	<A name="doc"></A>
 	<section class="documental">
 		<div class="container">
 			<h2>VER NUESTRO DOCUMENTAL</h2>
@@ -61,18 +63,18 @@
 					<p>De la competencia expuesta en el documental participaron 300 equipos, de los cuales 44 llegaron a la semifinal, luego seis resultaron finalistas y finalmente el ganador recibió un premio de 10 000 dólares.</p>
 				</div>
 				<div class="col-md-6">
-					<iframe width="90%" height="315" src="https://www.youtube.com/embed/cRb5iel-3Ck" frameborder="0" allowfullscreen></iframe>
+					<iframe src="https://www.youtube.com/embed/cRb5iel-3Ck" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
 	</section>
-
+	<A name="hacka"></A>
 	<section class="hackaton">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
 					<div class="img-hack">
-						<img width="100%" src="img/hackathon.jpg" alt="">
+						<img src="img/hackathon.jpg" alt="">
 					</div>
 				</div>
 				<div class="col-md-6">
@@ -84,12 +86,12 @@
 			</div>
 		</div>
 	</section>
-
+	<A name="contacto"></A>
 	<section class="contacto">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
-					<img class="img-contact" width="100%" src="img/made_with_code.jpg" alt="">
+					<img class="img-contact" src="img/made_with_code.jpg" alt="">
 				</div>
 				<div class="col-md-4">
 					<h3>CONTACTO</h3>
@@ -98,7 +100,7 @@
 					<input type="text" placeholder="Email">
 					<input type="text" placeholder="Asunto">
 					<input class="mensaje" type="text" placeholder="Mensaje">
-					<button class="btn btn-primary btn-lg">Enviar</button>
+					<button class="contact btn btn-primary btn-lg">Enviar</button>
 				</div>
 			</div>
 		</div>
